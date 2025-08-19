@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Comecei no DMW e agora?</title>
+
+    <style>
+      :root{
+        --bg: #000;            
+        --text: #eaeaea;       
+        --muted: #c7c7c7;      
+        --accent: #7dd3fc;     
+        --card: #0e0e0e;      
+        --border: #1c1c1c;     
+        --radius: 16px;       
+        --wrap: 980px;        
+      }
+
+    
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body{
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+      }
+
+      a{ color: var(--accent); text-decoration: none; }
+      a:hover{ text-decoration: underline; }
+
+      .wrap{
+        width: min(var(--wrap), 92vw);
+        margin-inline: auto;
+        padding: 32px 16px;
+      }
+
+      header.hero{
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-inner{ max-width: 900px; }
+
+      h1{
+        margin: 0 0 12px;
+        font-size: clamp(28px, 5vw, 56px);
+        letter-spacing: -0.02em;
+      }
+      p.lead{
+        margin: 0 auto 24px;
+        max-width: 70ch;
+        color: var(--muted);
+        font-size: clamp(16px, 2.2vw, 20px);
+      }
+
+      nav#toc{
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 12px 0;
+        margin: 16px 0 0;
+      }
+      #toc ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #toc a{
+        display: inline-block;
+        padding: 8px 14px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: #0a0a0a;
+      }
+
+      section.topico{
+        padding: 56px 0;
+        border-top: 1px solid var(--border);
+      }
+      section.topico:first-of-type{
+        border-top: none;
+      }
+
+      h2{
+        margin: 0 0 8px;
+        font-size: clamp(22px, 3.2vw, 34px);
+        letter-spacing: -0.01em;
+      }
+      p.desc{
+        margin: 0 auto 28px;
+        max-width: 72ch;
+        color: var(--muted);
+      }
+
+      .card{
+        width: min(860px, 95%);
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+        text-align: left;
+      }
+      .card pre{
+        margin: 0;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14px;
+      }
+      .steps{ text-align: left; width: min(860px, 95%); margin: 0 auto; }
+      .steps ol{ margin: 0; padding-left: 1.25rem; }
+
+      li{
+        margin-bottom: 20px;
+      }
+
+      footer{
+        padding: 40px 0 56px;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+        margin-top: 56px;
+      }
+
+      #toTop{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        padding: 20px 24px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: #0a0a0a;
+        color: var(--text);
+        cursor: pointer;
+        opacity: 0.85;
+        font-size: 20px;
+      }
+      #toTop:hover{ opacity: 1; }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap hero-inner">
+        <h1>Comecei e Agora?</h1>
+        <p class="lead">Um guia para iniciantes no DMW criado por TheCarecas</p>
+        <p class="lead">Nada aqui é absoluto ou obrigatório, são dicas que você pode escolher seguir ou não.</p>
+
+        <nav id="toc" aria-label="Tabela de Conteúdo">
+          <ul id="tocList"><li>Sem tópicos ainda</li></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap" id="conteudo">
+      <h3 style="color: red;">O guia de selos deve ser acompanhado junto dos demais, conforme for progredingo volte no guia de selos e foque neles também! <a href="#topico-05">Selos</a> </h3>
+      <section class="topico" id="topico-01">
+        <h2>O inicio</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Isso aqui é antes de tudo, até mesmo escolher o digi principal!</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Passo a passo</h3>
+          <ol>
+            <li>Quais digi escolho no jump? A galera ta recomendando começar de <b>Lalamon</b>, escolher <b>LKX ou AOX</b>. os 3 são AA então escolha o <b>tamer AA e os acc AA</b>.
+Também é uma boa opção começar de <b>Agumon AA e pegar ShadowMedievalGallantmon ou LKX</b>.</li>
+            <li>Entre no mapa para Beginner, você receberá alguns itens úteis depois de concluir todas as missões no mapa. (DMW Village, o Portal por trás do Birdramon NPC)</li>
+            <li>Seu foco principal deve ser terminar todas as missões principais em todos os mapas, começando com File Island, Server Continent, Odaiba e Spiral Mountain.</li>
+            <li>Depois de File Island você deve completar os mapas de Server Continent, mas, se faltar EXP vá para Western Area (Começando em Maze Entrance e indo até F4).</li>
+            <li>PawnChessmon W (Quest Rewards) oferece ótimas recompensas depois de concluir a linha de missão em um mapa. (Ele fica no dats perto do culumon)</li>
+            <li>Depois de completar esses mapas, você pode terminar a última área que dá as recompensas, o Snow maps. <b>Tenha cuidado</b>, porém, nos mapas de Snow, às vezes você tem que completar missões secundárias para abrir novas missões principais.</li>
+            <li>Atualmente tem missões <b>Challenge</b> para novatos (essas todo mundo faz). As missões <b>Challenge</b> podem pedir coisas muito dificeis e é normal, elas são missões de progressão da sua conta, conforme você for avançando você vai conseguindo fazer então não se prenda a elas.</li>
+            <li>Após pegar 120 de tamer, comece a fazer as 2 quests diárias do digivice para upar seus digimons do 0 ao 120 com cada missão (de preferencia aos spirits para craftar o susanomon shin) o nome das quests no digivice são: <b>Experience Trial</b> & <b>Dungeon Runs</b></li>
+            <li>Parte do guia foi retirado/inspirado no guia da: <a target="_blank" href="https://digitalmastersworld.wiki.gg/wiki/Guide_for_Newbies_BR">Wiki</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="topico" id="topico-02">
+        <h2>Começando o Farm</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Isso aqui é após terminar de abrir todos os mapas e seu tamer estiver Lv 120</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Passo a passo</h3>
+          <ol>
+            <li>Fique ligado caso esteja rolando algum evento, para tentar participar dele o máximo que conseguir, mas não se preocupe o server tem bons eventos o ano todos!</li>
+            <li>Após terminar os mapas e pegar as recompensas, eu Carecas recomendo vocês a farmarem na ⁠run-dos-teras (Tour de area digital) e nos mapas de digital area / spiral mountain / mapa de eventos atuais (se tiver), para comprar os equipamentos radiant da QDG e o bracelete 5 status X. Procure conseguir os tatus semi perfeito que podem ser vistos aqui ⁠equipamentos-perfeitos de inicio ja estara ótimo.</li>
+            <li>Em seguida faça as Dgs das bestas (EDG/ZDG/BDG/QDG) para dropar os eggs do Fanglongmon e fazer um para vc. As dgs SSS ou Hard dropam eggs reinforced (3/5 4/5 5/5) deles. Recomendo ao menos um 5/5 dos 4 digis!</li>
+            <li>Após fazer seu fang vc pode upar/farmar com ele com skill AOE (em area) em digital area / spiral mountain / mapa de eventos atuais (se tiver) e fazer muitos Teras! Combine a ⁠run-dos-teras e o farm por hora e vc conseguira progredir tranquilamento.</li>
+            <li>Também é possível upar do 0 ao 120 (mas recomendado até no maximo 114) no ⁠mapa-de-exp que abre SEX as 21:00 e fecha DOM as 21:00 (Horário de brasilia)</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="topico" id="topico-03">
+        <h2>A caminho do mid-game</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Isso aqui é após terminar de abrir todos os mapas e ter seu Digi de farm AOE
+</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Aqui as coisas mudam bastante!</h3>
+          <ol>
+            <li><b>Escolha sua Role(AA, SK ou TK) e foque nela! Alternar entre roles, custa T e tempo de investimento!</b></li>
+            <li>Após escolher sua role, seu próximo passo será craftar os ACC do Fang Lv 10 ou os Radiant Holy Beast Lv5!</li>
+            <li>Qual a diferença dos ACC HB5 pro divine e do Fang lv 10 pro Fang ultimate? Em abos a diferença é que os divine e ultimate não precisa usar NCS, eles ja vem com os valores no máximo.</li>
+            <li>O ACC do Fang Lv10 é superior ao das HB lv5/divine, por isso você pode craftar direto o Fang Lv10 se conseguir e estiver mais em conta! (Nem sempre vale a pena ir direto pro Fang Lv 10)</li>
+            <li>Após você craftar todos seus ACC Fang Lv 10, você se quiser pode craftar os HB lv 5 divine e fazer o seu Fang ultimate.</li>
+            <li>Para saber quais status você deve pegar nos acessórios, depende da classe que você utiliza seus digimons (AA/SK/TK)</li>
+            <li><b>Dica Importante</b>: foque em conseguir os semi-perfeitos ou quase semi-perfeitos, guarde suas pedras (OCS/NCS) para quando tiver equipamentos mais end game e tentar pegar o perfeito neles!</li>
+            <li><b>Outra Dica</b>: alguns equipamentos são baratos (500m/1T) (xuan/qing/zhuqi/biahu) e eles vem com 30 chances de roletar as opções, as vezes é mais valido você comprar um novo e tentar pegar os status do que gastar as pedras <b>Amazing Renewal Increase Stone (+5)</b>.</li>
+            <li style="color: red;"><b>Busque status semi-perfeitos em seus ACCS de inicio (Fang lv 10, Radiant Holy Beast Lv5 Divine), Só busque estatus perfeitos quando tiver os accessórios Fang Ultimate!</b></li>
+            <li>Para mais referências dos status e acessórios do game: <a href="https://digitalmastersworld.wiki.gg/wiki/Clothing">Acessórios na Wiki</a></li>
+
+            <h3>Acessórios Semi-Perfeitos!</h3>
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Critical Demage / Basic Attribute </td>
+                  <td>Critical Demage / Critical Demage / Hit Rate</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Attack Speed / Basic Attribute</td>
+                  <td>Critical Demage / Attack Speed / Attack</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>AA</td>
+                  <td>Attack / Attack / Basic Attribute</td>
+                  <td>Attack / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Critical Demage / Hit Rate / Hit Rate / Attack</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>SK</td>
+                  <td>Skill / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>SK</td>
+                  <td>Skill / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>SK</td>
+                  <td>Skill / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>SK</td>
+                  <td>Skill / Skill / HP / HP </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>TK</td>
+                  <td>HP / HP / Block</td>
+                  <td>HP / HP / EV</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>TK</td>
+                  <td>HP / HP / Defense</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>TK</td>
+                  <td>HP / HP / Defense</td>
+                  <td>HP / HP / Defense </td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>TK</td>
+                  <td>HP / HP / Defense / Block</td>
+                  <td>HP / HP / EV / EV </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Acessórios Perfeitos!</h3>
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Critical Demage / Basic Attribute / Basic Attribute</td>
+                  <td>Critical Demage / Critical Demage / Basic Attribute / Hit Rate</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Attack Speed / Basic Attribute / Basic Attribute</td>
+                  <td>Critical Demage / Attack Speed / Attack / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>AA</td>
+                  <td>Attack / Attack / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>AA</td>
+                  <td>Critical Demage / Critical Demage / Hit Rate / Hit Rate / Attack</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>SK</td>
+                  <td>Skill / Skill / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>SK</td>
+                  <td>Skill / Basic Attribute / Basic Attribute / HP</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>SK</td>
+                  <td>Skill / Skill / Basic Attribute / Basic Attribute</td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>SK</td>
+                  <td>Skill / Skill / HP / HP / Attack ou DS</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table border="1" cellspacing="0" cellpadding="8" style="margin: 30px auto; border-collapse: collapse; text-align: center; width: 80%;">
+              <thead>
+                <tr>
+                  <th>Acessório</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brinco</td>
+                  <td>TK</td>
+                  <td>HP / HP / Block / Defense</td>
+                  <td>HP / HP / Block / EV</td>
+                </tr>
+                <tr>
+                  <td>Neck</td>
+                  <td>TK</td>
+                  <td>HP / HP / HP / Defense</td>
+                </tr>
+                <tr>
+                  <td>Ring</td>
+                  <td>TK</td>
+                  <td>HP / HP / HP / Defense</td>
+                  <td>HP / HP / Defense / Defense</td>
+                </tr>
+                <tr>
+                  <td>Bracelet</td>
+                  <td>TK</td>
+                  <td>HP / HP / Defense / Defense / Block</td>
+                  <td>HP / HP / EV / EV / Block</td>
+                </tr>
+              </tbody>
+            </table>
+          </ol>
+        </div>
+      </section>
+
+      <section class="topico" id="topico-04">
+        <h2>Ainda a caminho do mid-game</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Isso aqui é após ter seus acessórios do Fang LV 10 ou ultimate!</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Passo a passo</h3>
+          <ol>
+            <li>Se você for SK ou TK, Comece a fazer o Coliseu Hard (até R13) para começar a pegar as Supreme Evolution Summon Card /V2 para craftar o Susanomon Shin/Fanglongmon Shin/Omegamon Alter-B</li>
+            <li>Susanomon Shin/Fanglongmon Shin/Omegamon Alter-B Liberam decks bons para SK e TK mid-game</li>
+            <li>Se você for AA, comece a fazer as DGS do Bloomlordmon e DarknessBagramon serão seus SSS+ e abrem decks bons mid-game para AA</li>
+            <li>Independente de sua Role, olhe os Decks do game e veja uma progressão, o que você achar melhor! O jogo agora possui uma gama de decks úteis e facil de se fazer! <a target="_blank" href="https://digitalmastersworld.wiki.gg/wiki/Deck_System">Decks na wiki</a></li>
+            <li>Se você for AA ou Tank, você vai precisar fazer as DGS do Vajramon Hard e Vikaralamon Hard para começar seu digivice D-ark: Para mais infos <a target="_blank" href="https://digitalmastersworld.wiki.gg/wiki/D-Ark_Vice">D-ark na Wiki</a></li>
+            <li>Se você for SK, você vai precisar fazer as DGS de Odaiva, Fuji TV, Venom Vortex e Tokyo Tower, para fazer seu True Vice, você provavelmente precisará de no minimo 2 True vices, 1 VA/LUZ e outro VI/DARK</li>
+            <li>Em seguida faça as Dgs das bestas (EDG/ZDG/BDG/QDG) para dropar os eggs do Fanglongmon e fazer um para vc. As dgs SSS ou Hard dropam eggs reinforced (3/5 4/5 5/5) deles. Recomendo ao menos 1 5/5 dos 4! Para mais infos: <a target="_blank" href="https://digitalmastersworld.wiki.gg/wiki/True_Vice">True Vice Guia da Wiki</a></li>
+            <li><b>Para AA e TK</b>: Ao terminar seu D-ark Lv5 os próximos levels do digivice são nas DGS de shinjuku PT2 (Chaotic/Final/Burning), PTs para essas DGs exigem Omegamon-X/Blommlordmon bem equipado ou Tank Susanomon Cosmic(digimon free no jogo). O caminho mais facil é você fazer uma build tank semi-perfeita e craftar o susanomon cosmic para fazer as DG com mais facilidade</li>
+            <li>Para Tank a sequência de level do digivice é o Digizoid D-ark e depois o ChromeDigizoid D-ark (pode juntar materias e pular direto pro ChromeDigizoid)  <b>**Os materiais podem ser comprados de players</b>!</li>
+            <li>Para AA a sequência de level do digivice é o Rage D-ark e depois o Uncontrollable D-ark (pode juntar materias e pular direto pro Uncontrollable)  <b>**Os materiais podem ser comprados de players</b>!</li>
+            <li>Para SK a sequência de level do True Digivice é o Advanced True Digivice <b>**Os materiais podem ser comprados de players</b>! Para mais infos: <a target="_blank" href="https://digitalmastersworld.wiki.gg/wiki/True_Vice_Advanced"> Guia do ATV na Wiki</a></li>
+            <li>Para SK você pode usar 2 ADV Vices, um DA/VA/LUZ (para OX/EXAX/SUSASHIN) e outro VI/DA/UK (para AB/ZD/APOKA/ORDINE) se você não tiver EXA pode crafter 1 terceiro ADV para DA/EARTH/X</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="topico" id="topico-05">
+        <h2>Guia de Selos (Seals)</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Este guia acompanha todos os outros guias juntos! Então fique ligado nele também conforme progride!</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Passo a passo</h3>
+          <ol>
+            <li>Comece por DE, tente abrir até 1k se possível</li>
+            <li>Se for jogar de AA o resto do foco deve ser HT > AT > CT > BL (até fechar 100% com digi clonado perfeito) > HP</li>
+            <li>Se for SK invista em SK >  HP > DS  > AT</li>
+            <li>Se for TK, é altamente recomendado abrir maximo de BL  > DE > HP > EV (EV em prioridade se for jogar de Tank EV)</li>
+            <li>Conforme for progredindo do early pro mid e do mid pro end, você vai subindo os status dos selos o máximo que conseguir!</li>
+            <li>Comece abrindo no max 200 de cada para não gastar muitos Openers. Após abrir 200 de tudo que consegue na ordem de prioridade, pode ir para 500 de cada e então 1000 de cada. No final abra 3k dos que mais dão status primeiro.</li>
+            <li>Alguns selos são muito caros para abrir até mesmo 50, pode abrir somente 1 dele mesmo que o status dele vai ser alto no nivel de um de 200 as vezes.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="topico" id="topico-06">
+        <h2>A caminho do end-game</h2>
+        <p class="desc">
+        </p>
+
+        <div class="card" role="region" aria-label="Exemplo de código ou conteúdo">
+          <pre><code>Aqui você precisa ter passados por todos os outros guias, ter os digivices necessário para sua role, um digi de cada ATT SSS+ (VA/VI/DA) se for TK são SSS mesmo, ter status de selos altos.</code></pre>
+        </div>
+
+        <div class="steps">
+          <h3>Passo a passo</h3>
+          <ol>
+            <li>Se vcoê pegou tudo que tem no mid-game, equipamentos perfeitos/ selos / Digis</li>
+            <li>Agora você irá fazer RBH (Royal Base Hard) <a target="_blank" href="https://youtu.be/MleFmTYD5eY?si=jMPLw3LKlGa7duEr">Guia da DG</a> ou comprar os itens para craftar seu Yggdrasil Bracelet</li>
+            <li>Após ter seu Yggdrasil Bracelet, estar com decks mid-game, status perfeitos, e todo o resto, é hora de enfrentar as DGS de Spiral Mountain</li>
+            <li>Fazendo as DGS de Spiral Mountain você vai poder craftar os acessórios end-game, que são especificos e tem status especificos para as Roles!</li>
+            <li>Além disso também tem o Spiral Key Ring que também é feito com as DGS de Spiral Mountain</li>
+          </ol>
+        </div>
+      </section>
+      <h3>Acredito que aqui você já tem conhecimento o suficiente do jogo para ententer o resto do seu caminho! O mais importante é se divertir jogando! Este guia é mais para lhe ajudar a entender alguns caminhos que pode ser feito no game, não se apegue tanto ao guia, use-o apenas para lhe ajudar em sua jornada, obrigado por ler até aqui tamer!</h3>
+      <h3>Meu canal no YT para guias/atualizações/eventos <a target="_blank" href="https://www.youtube.com/@TheCarecas">@TheCarecas</a></h3>
+      <h3>Meu discord caso tenha alguma dúvida/elogio/sugestão ou precise de guilda: TheCarecas</h3>
+    </main>
+
+    <footer class="wrap" role="contentinfo">
+      <p>© <span id="ano"></span> • <a target="_blank" href="https://www.youtube.com/@TheCarecas">TheCarecas</a> • Sem cabelo mas com conhecimento.</p>
+    </footer>
+
+    <button id="toTop" aria-label="Voltar ao topo" title="Voltar ao topo">↑ Topo</button>
+
+    <script>
+      document.getElementById('ano').textContent = new Date().getFullYear();
+
+      const tocList = document.getElementById('tocList');
+      const topics = Array.from(document.querySelectorAll('section.topico'));
+      tocList.innerHTML = '';
+      if (topics.length === 0) {
+        tocList.innerHTML = '<li>Sem tópicos ainda</li>';
+      } else {
+        topics.forEach((sec, i) => {
+          const h2 = sec.querySelector('h2');
+          const id = sec.id || `topico-${String(i+1).padStart(2, '0')}`;
+          sec.id = id;
+          const label = h2 ? h2.textContent.trim() : `Tópico ${i+1}`;
+          const a = document.createElement('a');
+          a.href = `#${id}`;
+          a.textContent = label;
+          const li = document.createElement('li');
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      const toTop = document.getElementById('toTop');
+      toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
+  </body>
+</html>
